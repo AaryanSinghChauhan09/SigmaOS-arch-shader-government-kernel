@@ -1,10 +1,13 @@
 [package]
-name = "arch-shader-government-kernel"
+name = "sigmaos-arch-shader-government-kernel"
 version = "0.1.0"
 edition = "2021"
-description = "SigmaOS SigmaOS-arch-shader-government-kernel component - Inspired by Arch Linux and Debian"
+description = "Government kernel shader management for SigmaOS"
 license = "MIT"
 repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-arch-shader-government-kernel"
 
 [dependencies]
-thiserror = "2"
+
+[lib]
+name = "sigmaos_arch_shader_government_kernel"
+path = "src/lib.rs"

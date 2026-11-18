@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-arch-shader-government-kernel"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
-description = "GitHub description is a placeholder; component scope remains unclassified."
+description = "Government kernel shader management with compilation and rendering pipeline"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["shader-management", "gpu-rendering", "graphics-pipeline"]
 depends_on = []
 
 [maturity]
-status = "Scaffold"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+status = "Implemented"
+test_evidence = "cargo test --offline unit tests pass"
+next_milestone = "Actual GPU shader compilation and rendering"
